@@ -1,0 +1,14 @@
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Todo
+        style
+            include  ./css/style.css
+    body
+        h1 Todos List 
+        form(class= 'todo', method='POST', action='http://localhost:3000/todo')
+            label(for="todo") Todo:
+            input(name='todo', type='text')
+            button(type='submit') Submit
+
